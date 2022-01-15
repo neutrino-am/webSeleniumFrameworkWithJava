@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="2">
+    <listeners>
+        <listener class-name = "com.am.listeners.ListenerClass" />
+        <listener class-name = "com.am.listeners.MethodInterceptor" />
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/ashutoshmishra/Desktop/BT/repo/eonbtautomation/org.eon.clientSite">
+        <classes>
+            <class name="com.am.tests.verifyForgotPassword"></class>
+        </classes>
+    </test>
+</suite>
+
+ORIGINAL ----------
+       <?xml version="1.0" encoding="UTF-8"?>
+       <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+       <suite name="All Test Suite">
+           <listeners>
+               <listener class-name = "com.am.listeners.ListenerClass" />
+           </listeners>
+           <test verbose="2" preserve-order="true" name="/Users/ashutoshmishra/Desktop/BT/repo/eonbtautomation/org.eon.clientSite"><classes><class name="com.am.tests.VerifyLogin"><methods><include name="verifyClientSiteIsUp"/><include name="verifyValidUserLogin"/><include name="verifyInvalidUserLogin"/><include name="verifySignupPage"/></methods></class><class name="com.am.tests.verifyClinicSettings"><methods><include name="ValidateClinicSettingsPage"/><include name="ValidateAddClinicPage"/><include name="ValidateEditClinicPage"/></methods></class><class name="com.am.tests.verifyCustomerAccount"><methods><include name="validateCustomerAccountPage"/></methods></class><class name="com.am.tests.verifyForgotPassword"><methods><include name="verifyForgetPwd"/></methods></class><class name="com.am.tests.verifyHomePage"><methods><include name="ValidateHomePage"/></methods></class><class name="com.am.tests.verifyMembersSettings"><methods><include name="ValidateMemberSettingsPage"/><include name="ValidateAddMemberPage"/><include name="ValidateEditMemberPage"/></methods></class><class name="com.am.tests.verifyOrders"><methods><include name="ValidateOrdersPage"/><include name="ValidateOrdersTable"/><include name="ValidateOrdersCreation"/></methods></class><class name="com.am.tests.verifyPackages"><methods><include name="ValidatePackagesPage"/><include name="ValidatePackagesTable"/></methods></class><class name="com.am.tests.verifyPatients"><methods><include name="ValidatePatientPage"/><include name="ValidatePatientsTable"/><include name="ValidatePatientDetails"/></methods></class><class name="com.am.tests.verifyProducts"><methods><include name="ValidateProductsPage"/></methods></class><class name="com.am.tests.verifySettings"><methods><include name="ValidateSettingsPage"/></methods></class><class name="com.am.tests.verifySignup"><methods><include name="ValidatePage"/></methods></class></classes></test></suite>

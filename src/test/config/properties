@@ -1,0 +1,21 @@
+#dev  - https://dev.onb.eonbt.com/#/user/login
+#test - https://tst.onb.eonbt.com/#/user/login
+#prod - https://onb.eonbt.com/#/user/login
+#give the url for whichever env you want to run the testcases
+url=https://tst.onb.eonbt.com/#/user/login
+
+#chrome, firefox,ie
+browser=chrome
+
+#Dynamic reports - yes / no
+#If no = test report will have currentTime+index.html ; ; ELSE just index.html
+overridereports=yes
+
+#passedStep Screenshot - yes / no
+passedstepsscreenshot =yes
+
+#failedStep Screenshot - yes / no
+failedstepsscreenshot =yes
+
+#failedStep Screenshot - yes / no
+skippedstepsscreenshot =yes

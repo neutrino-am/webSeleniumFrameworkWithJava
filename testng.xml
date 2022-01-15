@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="2">
+    <listeners>
+        <listener class-name = "com.am.listeners.ListenerClass" />
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/ashutoshmishra/Desktop/myWork/org.am.site">
+        <classes>
+            <class name="com.am.tests.verifyAppointmentDetails"></class>
+        </classes>
+    </test>
+</suite>
