@@ -6,7 +6,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="/Users/ashutoshmishra/Desktop/myWork/org.am.site">
         <classes>
-            <class name="com.am.tests.verifyAppointmentDetails"></class>
+            <class name="com.am.tests.testcasename"></class>
         </classes>
     </test>
 </suite>
