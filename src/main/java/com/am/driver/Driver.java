@@ -4,6 +4,7 @@ import com.am.constants.FrameworkConstants;
 import com.am.enums.ConfigProperties;
 import com.am.utils.PropertyUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -24,6 +25,7 @@ public final class Driver {
 
             DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
             DriverManager.getDriver().manage().window().maximize();
+            DriverManager.getDriver().manage().window().setSize(new Dimension(1440, 900));
         }
     }
     public static void quitDriver() {
