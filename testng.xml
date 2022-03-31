@@ -4,9 +4,9 @@
     <listeners>
         <listener class-name = "com.am.listeners.ListenerClass" />
     </listeners>
-    <test verbose="2" preserve-order="true" name="/Users/ashutoshmishra/Desktop/myWork/org.am.site">
+    <test verbose="2" preserve-order="true" name="/Users/ashutoshmishra/Desktop/myWork/org.am.site" parallel="methods" thread-count="2">
         <classes>
-            <class name="com.am.tests.testcasename"></class>
+            <class name="com.am.tests.VerifyLogin"></class>
         </classes>
     </test>
 </suite>
